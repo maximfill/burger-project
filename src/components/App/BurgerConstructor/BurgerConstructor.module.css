@@ -1,0 +1,63 @@
+.mainContainer {
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+}
+
+.menuDesigner {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column; 
+}
+
+.placingAnOrder {
+  max-width: 568px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.scrollMenu {
+  max-height: calc(100vh - 520px);
+  overflow-y: scroll;
+}
+
+.scrollMenu::-webkit-scrollbar-track {
+  background-color: #f4f4f4; /* цвет фона скроллбара */
+}
+
+.scrollMenu::-webkit-scrollbar-thumb {
+  background-color: #ff6600; /* цвет ползунка */
+}
+
+.selectMenuTop {
+  display: flex;
+  margin-left: auto;
+  max-width: 536px;
+}
+
+.selectMenuBottom {
+  margin-left: auto;
+}
+
+.orderPrice {
+  max-width: 119px;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.placingAnOrderCheckout {
+  max-width: 568px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.checkout {
+  max-width: 215px;
+  margin-left: 40px;
+}

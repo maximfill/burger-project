@@ -1,0 +1,105 @@
+.BurgerIngredients {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.burgerSign {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+}
+
+.menuСontainer {
+    max-width: 600px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.bunsRange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+    margin: 16px 0 16px 0;
+    width: 100%;
+}
+
+.saucesRange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    margin: 16px 0 16px 0;
+    width: 100%;
+}
+
+.fillingsRange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px; 
+    margin: 16px 0 16px 0;
+    width: 100%;
+}
+
+.nameBuns {
+    margin-top: 40px;
+    margin-bottom: 24px;
+    display: flex;
+}
+
+.buns {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bunsSauce {
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 17px;
+    column-gap: 24px;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.BurgerSauce {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.partOfABun {
+    /* max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; */
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; 
+}
+
+
+.scrollMenu {
+    max-height: calc(100vh - 520px);
+    overflow-y: scroll;
+  }
+  
+  .scrollMenu::-webkit-scrollbar-track {
+    background-color: #f4f4f4; /* цвет фона скроллбара */
+  }
+  
+  .scrollMenu::-webkit-scrollbar-thumb {
+    background-color: #ff6600; /* цвет ползунка */
+  }
+
+
+
