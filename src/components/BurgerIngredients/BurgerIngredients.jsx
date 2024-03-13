@@ -1,12 +1,11 @@
 import React from 'react';
 import styles from './BurgerIngredients.module.css';
-import BurgerIngredient from '../App/BurgerIngredient/BurgerIngredient';
-import data from '../../utils/data';
+import BurgerIngredient from '../BurgerIngredient/BurgerIngredient';
 
-const BurgerIngredients = () => {
+const BurgerIngredients = ({data}) => {
   return(
 
-    <div className={styles.BurgerIngredients}>
+    <div className={styles.burgerIngredients}>
 
       <div className={styles.burgerSign}>
         <p className="text text_type_main-large">
@@ -31,12 +30,12 @@ const BurgerIngredients = () => {
         </div>
       </div>
 
-      <div className={styles.nameBuns}>
-        <p className="text text_type_main-medium">
-          Булки
-        </p>
-      </div>
       <div className={styles.scrollMenu}>
+        <div className={styles.nameBuns}>
+          <p className="text text_type_main-medium">
+            Булки
+          </p>
+        </div>
         <div className={styles.buns}>
           {data.map(item => { 
             if (item.type === "bun") { 

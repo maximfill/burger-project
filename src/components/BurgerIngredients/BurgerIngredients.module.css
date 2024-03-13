@@ -1,4 +1,4 @@
-.BurgerIngredients {
+.burgerIngredients {
     max-width: 600px;
     width: 100%;
     display: flex;
@@ -76,10 +76,6 @@
 }
 
 .partOfABun {
-    /* max-width: 600px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start; */
     max-width: 600px;
     display: flex;
     flex-direction: row;
@@ -91,15 +87,15 @@
 .scrollMenu {
     max-height: calc(100vh - 520px);
     overflow-y: scroll;
-  }
-  
-  .scrollMenu::-webkit-scrollbar-track {
-    background-color: #f4f4f4; /* цвет фона скроллбара */
-  }
-  
-  .scrollMenu::-webkit-scrollbar-thumb {
-    background-color: #ff6600; /* цвет ползунка */
-  }
+}
+
+.scrollMenu::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+}
+
+.scrollMenu::-webkit-scrollbar-thumb {
+    background-color: #ff6600; 
+}
 
 
 

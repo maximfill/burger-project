@@ -5,7 +5,7 @@ import { CurrencyIcon } from '@ya.praktikum/react-developer-burger-ui-components
 
 const BurgerIngredient = ({title, image, price}) => {
   return (
-    <div className={styles.breadMenuWrapper}>
+    <div className={styles.ingredientsMenuWrapper}>
       <img src={image} alt="Ингредиент бургера" />
       <div className={styles.containerPrice}>
         <p className="text text_type_digits-default mr-2"> {price} </p>

@@ -9,7 +9,7 @@ const Header = () => {
   return(
     <header className={styles['logo-containerHeader']}>
 
-      <div className={styles.containerOrderFeed}>
+      <div className={styles.containerOrder}>
         <div className={styles.burgerWrap}>
           <BurgerIcon type="primary"/>
           <p className="text text_type_main-default ml-4">
@@ -24,11 +24,11 @@ const Header = () => {
         </div>
       </div>
 
-      <div className={styles.logoIconWrapper}>
+      <div className={styles.logo}>
         <Logo />
       </div>
 
-      <div className={styles.containerPersonalAccount}>
+      <div className={styles.containerAccount}>
         <ProfileIcon type="secondary" />
         <p className="text text_type_main-default text_color_inactive ml-4">
           Личный кабинет

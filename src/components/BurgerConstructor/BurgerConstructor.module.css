@@ -7,12 +7,6 @@
   width: 100%;
 }
 
-.menuDesigner {
-  max-width: 600px;
-  display: flex;
-  flex-direction: column; 
-}
-
 .placingAnOrder {
   max-width: 568px;
   display: flex;
@@ -20,17 +14,38 @@
   margin-top: 100px;
 }
 
+@media screen and (max-width: 1920px) {
+  .placingAnOrder {
+    max-width: 90%; /* изменяем максимальную ширину на 90% при ширине экрана меньше 768px */
+    margin-top: 50px; /* изменяем отступ сверху на 50px */
+  }
+}
+
+
 .scrollMenu {
   max-height: calc(100vh - 520px);
   overflow-y: scroll;
+  margin-right: auto;
+  max-width: 568px;
+  width: 100%;
+  max-width: 100%;
 }
 
 .scrollMenu::-webkit-scrollbar-track {
-  background-color: #f4f4f4; /* цвет фона скроллбара */
+  background-color: #8585AD /* цвет фона скроллбара */
 }
 
 .scrollMenu::-webkit-scrollbar-thumb {
-  background-color: #ff6600; /* цвет ползунка */
+  background-color:  #8585AD /* цвет ползунка */
+}
+
+.selectMenu {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: 100%;
 }
 
 .selectMenuTop {
@@ -41,6 +56,7 @@
 
 .selectMenuBottom {
   margin-left: auto;
+  margin-top: 16px;
 }
 
 .orderPrice {
@@ -50,7 +66,7 @@
   align-items: center;
 }
 
-.placingAnOrderCheckout {
+.placingAnOrder {
   max-width: 568px;
   display: flex;
   justify-content: space-between;

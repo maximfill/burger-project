@@ -5,12 +5,12 @@
     display: flex;
 }
 
-.containerOrderFeed {
+.containerOrder{
     display: flex;
     align-items: center;
 }
 
-.containerPersonalAccount {
+.containerAccount {
     display: flex;
     align-items: center;
     max-width: 207px;
@@ -31,7 +31,7 @@
     margin-left: 12px;
 }
 
-.logoIconWrapper {
+.logo {
     display: flex;
     align-items: center;
     margin-left: 112px;
