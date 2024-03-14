@@ -1,4 +1,4 @@
-.burgerIngredients {
+.ingredients {
     max-width: 600px;
     width: 100%;
     display: flex;
@@ -47,7 +47,7 @@
 }
 
 .nameBuns {
-    margin-top: 40px;
+    margin-top: 50px;
     margin-bottom: 24px;
     display: flex;
 }

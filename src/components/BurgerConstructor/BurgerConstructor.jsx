@@ -8,7 +8,7 @@ import {DragIcon} from '@ya.praktikum/react-developer-burger-ui-components';
 const BurgerConstructor = ({data}) => {
   return( 
     <div className={styles.mainContainer}>
-      <div className={styles.placingAnOrder}>
+      <div className={styles.сontainerAnOrder}>
         <div className={styles.selectMenuTop}>
           <ConstructorElement
             type="top"

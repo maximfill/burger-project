@@ -5,7 +5,7 @@ import BurgerIngredient from '../BurgerIngredient/BurgerIngredient';
 const BurgerIngredients = ({data}) => {
   return(
 
-    <div className={styles.burgerIngredients}>
+    <div className={styles.ingredients}>
 
       <div className={styles.burgerSign}>
         <p className="text text_type_main-large">

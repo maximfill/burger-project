@@ -7,29 +7,28 @@
   width: 100%;
 }
 
-.placingAnOrder {
-  max-width: 568px;
+.сontainerAnOrder {
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   margin-top: 100px;
 }
 
-@media screen and (max-width: 1920px) {
-  .placingAnOrder {
-    max-width: 90%; /* изменяем максимальную ширину на 90% при ширине экрана меньше 768px */
-    margin-top: 50px; /* изменяем отступ сверху на 50px */
-  }
+.placingAnOrder {
+  max-width: 568px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
 }
-
 
 .scrollMenu {
   max-height: calc(100vh - 520px);
   overflow-y: scroll;
   margin-right: auto;
-  max-width: 568px;
+  max-width: 94%; /* Используем относительное значение вместо фиксированного */
   width: 100%;
-  max-width: 100%;
 }
+
 
 .scrollMenu::-webkit-scrollbar-track {
   background-color: #8585AD /* цвет фона скроллбара */
@@ -46,17 +45,22 @@
   align-items: center;
   width: 100%;
   min-width: 100%;
+  max-width: 568px;
 }
 
 .selectMenuTop {
   display: flex;
+  max-width: 568px;
+  width: 100%;
   margin-left: auto;
-  max-width: 536px;
 }
 
 .selectMenuBottom {
-  margin-left: auto;
   margin-top: 16px;
+  display: flex;
+  max-width: 568px;
+  width: 100%;
+  margin-left: auto;
 }
 
 .orderPrice {
@@ -64,13 +68,6 @@
   display: flex;
   margin-left: auto;
   align-items: center;
-}
-
-.placingAnOrder {
-  max-width: 568px;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
 }
 
 .checkout {
