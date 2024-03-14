@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 100px;
+  align-items: center;
 }
 
 .placingAnOrder {
@@ -24,7 +25,6 @@
 .scrollMenu {
   max-height: calc(100vh - 520px);
   overflow-y: scroll;
-  margin-right: auto;
   max-width: 94%; /* Используем относительное значение вместо фиксированного */
   width: 100%;
 }
@@ -52,7 +52,6 @@
   display: flex;
   max-width: 568px;
   width: 100%;
-  margin-left: auto;
 }
 
 .selectMenuBottom {
@@ -60,13 +59,11 @@
   display: flex;
   max-width: 568px;
   width: 100%;
-  margin-left: auto;
 }
 
 .orderPrice {
   max-width: 119px;
   display: flex;
-  margin-left: auto;
   align-items: center;
 }
 

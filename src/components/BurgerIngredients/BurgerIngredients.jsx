@@ -54,6 +54,19 @@ const BurgerIngredients = ({data}) => {
               return <BurgerIngredient key={item._id} title={item.name} price={30} image={item.image} />;} 
           })}
         </div>
+
+        <div className={styles.nameBuns}>
+          <p className="text text_type_main-medium">
+            Начинки
+          </p>
+        </div>
+        <div className={styles.bunsSauce}>
+          {data.map(item => { 
+            if (item.type === "main") { 
+              return <BurgerIngredient key={item._id} title={item.name} price={30} image={item.image} />;} 
+          })}
+        </div>
+
       </div>
     </div>
   )
