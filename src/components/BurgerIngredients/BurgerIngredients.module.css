@@ -82,11 +82,10 @@
     justify-content: flex-start;
     align-items: center; 
 }
-
-
+Add scroll
 .scrollMenu {
-    max-height: calc(100vh - 520px);
-    overflow-y: scroll;
+        max-height: 600px;
+        overflow-y: scroll;
 }
 
 .scrollMenu::-webkit-scrollbar-track {
