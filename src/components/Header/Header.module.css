@@ -4,6 +4,7 @@
     height: 88px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .containerOrder{
@@ -35,7 +36,6 @@
 
 .logo {
     position: absolute;
-    left: 815px;
-    right: 815px;
     top: 15px;
+    left: 495px;
 }

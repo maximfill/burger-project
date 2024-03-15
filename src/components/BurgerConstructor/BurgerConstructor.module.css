@@ -13,6 +13,7 @@
   flex-direction: column;
   margin-top: 100px;
   align-items: center;
+  padding-left: 30px;
 }
 
 .placingAnOrder {
@@ -27,6 +28,9 @@
   overflow-y: scroll;
   max-width: 94%; /* Используем относительное значение вместо фиксированного */
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -38,26 +42,39 @@
   background-color:  #8585AD /* цвет ползунка */
 }
 
+.dragIcon {
+  position: absolute;
+  bottom: 25px;
+  left: 0px;
+}
+
+.сonstructorElement {
+  max-width: 506px;
+  width: 100%;
+}
+
 .selectMenu {
+  position: relative;
   margin-top: 16px;
   margin-bottom: 16px;
   display: flex;
   align-items: center;
   width: 100%;
-  min-width: 100%;
+  max-width: 100%;
   max-width: 568px;
+  justify-content: flex-end;
 }
 
 .selectMenuTop {
-  display: flex;
-  max-width: 568px;
+  max-width: 536px;
   width: 100%;
-}
+  display: flex;
+}edit menu scroll
 
 .selectMenuBottom {
   margin-top: 16px;
   display: flex;
-  max-width: 568px;
+  max-width: 536px;
   width: 100%;
 }
 

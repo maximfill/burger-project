@@ -22,7 +22,12 @@ const BurgerConstructor = ({data}) => {
           {data.map(item => {
             if (item.type != "bun") { 
               return <div className={styles.selectMenu} key={item._id}>
-                <DragIcon type="primary" /> <ConstructorElement  text={item.name} price={20} thumbnail={item.image} />
+                <div className={styles.dragIcon}>
+                  <DragIcon type="primary" />
+                </div>
+                <div className={styles.сonstructorElement}>
+                  <ConstructorElement  text={item.name} price={20} thumbnail={item.image} />
+                </div>
               </div>}
           })}
         </div>
