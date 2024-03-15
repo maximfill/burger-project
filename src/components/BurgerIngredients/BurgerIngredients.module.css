@@ -84,8 +84,8 @@
 }
 
 .scrollMenu {
-        max-height: 600px;
-        overflow-y: scroll;
+    overflow-y: scroll;
+    max-height: calc(100vh - 300px);
 }
 
 .scrollMenu::-webkit-scrollbar-track {
