@@ -15,7 +15,7 @@ function App() {
   const [data, setData] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
   const [isModalIngredientOpen, setIsModalIngredientOpen] = React.useState(false);
-  const [isOrderDetails, setIsOrderDetails] = React.useState(false);
+  const [isModalOrderDetails, setIsOrderDetails] = React.useState(false);
 
   React.useEffect(() => {
   //   fetch(src)
@@ -59,7 +59,7 @@ function App() {
           <IngredientDetails setIsModalIngredientOpen={setIsModalIngredientOpen} />
         </Modal> : null 
       }
-      {isOrderDetails ?
+      {isModalOrderDetails ?
         <Modal>
           <OrderDetails setIsOrderDetails={setIsOrderDetails} />
         </Modal> : null

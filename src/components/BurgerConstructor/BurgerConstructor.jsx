@@ -7,7 +7,7 @@ import {DragIcon} from '@ya.praktikum/react-developer-burger-ui-components';
 
 const BurgerConstructor = ({data, setIsOrderDetails}) => {
 
-  const checkout = () => {
+  const handleClickIngredient = () => {
     setIsOrderDetails(true)
   };
 
@@ -51,7 +51,7 @@ const BurgerConstructor = ({data, setIsOrderDetails}) => {
             <CurrencyIcon type="primary" />
           </div>
           <div className={styles.checkout}>
-            <Button  onClick = {checkout} htmlType="button" type="primary" size="large">
+            <Button  onClick = {handleClickIngredient} htmlType="button" type="primary" size="large">
               Оформить заказ
             </Button>
           </div>
