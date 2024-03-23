@@ -5,7 +5,12 @@ import {Button} from '@ya.praktikum/react-developer-burger-ui-components';
 import {CurrencyIcon} from '@ya.praktikum/react-developer-burger-ui-components';
 import {DragIcon} from '@ya.praktikum/react-developer-burger-ui-components';
 
-const BurgerConstructor = ({data}) => {
+const BurgerConstructor = ({data, setIsOrderDetails}) => {
+
+  const checkout = () => {
+    setIsOrderDetails(true)
+  };
+
   return( 
     <div className={styles.mainContainer}>
       <div className={styles.сontainerAnOrder}>
@@ -46,7 +51,7 @@ const BurgerConstructor = ({data}) => {
             <CurrencyIcon type="primary" />
           </div>
           <div className={styles.checkout}>
-            <Button htmlType="button" type="primary" size="large">
+            <Button  onClick = {checkout} htmlType="button" type="primary" size="large">
               Оформить заказ
             </Button>
           </div>

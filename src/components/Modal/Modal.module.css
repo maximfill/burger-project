@@ -1,0 +1,19 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+/* .modalNew {
+  position: fixed;
+  position: absolute;
+  width: 720px;
+  height: 718px;
+  background-color: #1C1C21;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+} */
+

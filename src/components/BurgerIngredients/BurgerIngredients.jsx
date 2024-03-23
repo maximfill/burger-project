@@ -2,9 +2,8 @@ import React from 'react';
 import styles from './BurgerIngredients.module.css';
 import BurgerIngredient from '../BurgerIngredient/BurgerIngredient';
 
-const BurgerIngredients = ({data}) => {
+const BurgerIngredients = ({data, setIsModalIngredientOpen} ) => {
   return(
-
     <div className={styles.ingredients}>
 
       <div className={styles.burgerSign}>
@@ -39,7 +38,7 @@ const BurgerIngredients = ({data}) => {
         <div className={styles.buns}>
           {data.map(item => { 
             if (item.type === "bun") { 
-              return <BurgerIngredient key={item._id} title={item.name} price={20} image={item.image} />;} 
+              return <BurgerIngredient key={item._id} title={item.name} price={20} image={item.image} setIsModalIngredientOpen={setIsModalIngredientOpen}/>;} 
           })}
         </div>
 
@@ -51,7 +50,7 @@ const BurgerIngredients = ({data}) => {
         <div className={styles.bunsSauce}>
           {data.map(item => { 
             if (item.type === "sauce") { 
-              return <BurgerIngredient key={item._id} title={item.name} price={30} image={item.image} />;} 
+              return <BurgerIngredient key={item._id} title={item.name} price={30} image={item.image} setIsModalIngredientOpen={setIsModalIngredientOpen}/>;} 
           })}
         </div>
 
@@ -63,10 +62,9 @@ const BurgerIngredients = ({data}) => {
         <div className={styles.bunsSauce}>
           {data.map(item => { 
             if (item.type === "main") { 
-              return <BurgerIngredient key={item._id} title={item.name} price={30} image={item.image} />;} 
+              return <BurgerIngredient key={item._id} title={item.name} price={30} image={item.image} setIsModalIngredientOpen={setIsModalIngredientOpen}/>;} 
           })}
         </div>
-
       </div>
     </div>
   )

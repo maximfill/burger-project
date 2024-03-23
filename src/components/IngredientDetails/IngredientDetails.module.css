@@ -1,0 +1,68 @@
+.ingredient {
+  width: 720px;
+  height: 538px;
+  background-color: #1C1C21;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ingredientDetails {
+  width: 640px;
+  height: 64px;
+  margin-top: 40px;
+  font-size: 36px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.closing {
+  width: 24px;
+  height: 24px;
+}
+
+.cutlet {
+  height: 240px;
+  max-width:520px;
+}
+
+.cutletIng {
+  display: flex;
+  justify-content: center;
+  width: 480px;
+  height: 240px;
+}
+
+.compound {
+  width: 520px;
+  height: 30px;
+  font-size: 24px;
+  margin-top: 16px;
+}
+
+.container {
+  margin-top: 32px;
+  width: 516px;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.calories {
+  width: 120px;
+  height: 56px;
+}
+
+.ccal {
+  width: 120px;
+  height: 24px;
+  color: #8585AD;
+}
+
+.number {
+  margin-top: 8px;
+  width: 120px;
+  height: 24px;
+  color: #8585AD;
+}
