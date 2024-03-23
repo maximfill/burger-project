@@ -1,6 +1,5 @@
 .order {
   width: 720px;
-  height: 718px;
   background-color: #1C1C21;
   display: flex;
   align-items: center;
@@ -55,4 +54,5 @@
   width: 520px;
   height: 24px;
   margin-top: 8px;
+  margin-bottom: 120px;
 }
