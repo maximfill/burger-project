@@ -3,10 +3,13 @@ import styles from './BurgerIngredient.module.css';
 import { CurrencyIcon } from '@ya.praktikum/react-developer-burger-ui-components';
 
 
-const BurgerIngredient = ({title, image, price, setIsModalIngredientOpen}) => {
+const BurgerIngredient = ({setIsModalIngredientOpen, ingredientData, setIngredientDetails }) => {
+  const {image, price, title} = ingredientData;
 
   const handleClickIngredient = () => {
+    setIngredientDetails(ingredientData)
     setIsModalIngredientOpen(true)
+    
   };
 // при нажатии на элемент сост меняется и модалка с этим элементом появляется onClick={handleClickIngredient}
   return (

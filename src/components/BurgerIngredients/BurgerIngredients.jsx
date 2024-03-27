@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './BurgerIngredients.module.css';
 import BurgerIngredient from '../BurgerIngredient/BurgerIngredient';
 
-const BurgerIngredients = ({data, setIsModalIngredientOpen} ) => {
+const BurgerIngredients = ({data, setIsModalIngredientOpen, setIngredientDetails} ) => {
   return(
     <div className={styles.ingredients}>
 
@@ -36,9 +36,15 @@ const BurgerIngredients = ({data, setIsModalIngredientOpen} ) => {
           </p>
         </div>
         <div className={styles.buns}>
-          {data.map(item => { 
-            if (item.type === "bun") { 
-              return <BurgerIngredient key={item._id} title={item.name} price={20} image={item.image} setIsModalIngredientOpen={setIsModalIngredientOpen}/>;} 
+          {data.map(ingredientData => { 
+            if (ingredientData.type === "bun") { 
+              return <BurgerIngredient 
+                key={ingredientData._id}  
+                setIngredientDetails={setIngredientDetails} 
+                ingredientData={ingredientData} 
+                setIsModalIngredientOpen={setIsModalIngredientOpen}
+              />;
+            } 
           })}
         </div>
 
@@ -48,9 +54,15 @@ const BurgerIngredients = ({data, setIsModalIngredientOpen} ) => {
           </p>
         </div>
         <div className={styles.bunsSauce}>
-          {data.map(item => { 
-            if (item.type === "sauce") { 
-              return <BurgerIngredient key={item._id} title={item.name} price={30} image={item.image} setIsModalIngredientOpen={setIsModalIngredientOpen}/>;} 
+          {data.map(ingredientData=> { 
+            if (ingredientData.type === "sauce") { 
+              return <BurgerIngredient 
+                key={ingredientData._id} 
+                setIngredientDetails={setIngredientDetails} 
+                ingredientData={ingredientData}  
+                setIsModalIngredientOpen={setIsModalIngredientOpen}
+              />;
+            } 
           })}
         </div>
 
@@ -60,9 +72,15 @@ const BurgerIngredients = ({data, setIsModalIngredientOpen} ) => {
           </p>
         </div>
         <div className={styles.bunsSauce}>
-          {data.map(item => { 
-            if (item.type === "main") { 
-              return <BurgerIngredient key={item._id} title={item.name} price={30} image={item.image} setIsModalIngredientOpen={setIsModalIngredientOpen}/>;} 
+          {data.map(ingredientData => { 
+            if (ingredientData.type === "main") { 
+              return <BurgerIngredient 
+                key={ingredientData._id} 
+                setIngredientDetails={setIngredientDetails}
+                ingredientData={ingredientData}  
+                setIsModalIngredientOpen={setIsModalIngredientOpen}
+              />;
+            } 
           })}
         </div>
       </div>

@@ -1,28 +1,28 @@
 import React from 'react'
 import styles from './IngredientDetails.module.css';
-import image from '../../images/icon.png';
 
-const IngredientDetails = ({setIsModalIngredientOpen}) => {
+const IngredientDetails = ({ingredientDetails}) => {
 
-  const closingClickIngredient = () => {
-    setIsModalIngredientOpen(false)
-  };
+  const {calories, proteins, fat, carbohydrates, image, name} = ingredientDetails;
+console.log(ingredientDetails)
 
   return (
     <div className={styles.ingredient}>
       <div className={styles.ingredientDetails}>
-        Детали ингридиента
-        <div className={styles.closing} onClick={closingClickIngredient}>
-          <img src={image} alt="Image" />
-        </div>
+        <p className="text text_type_main-large">
+          Детали ингридиента
+        </p>
+  
       </div>
       <div className={styles.cutlet}>
         <div className={styles.cutletIng}>
-          <img src="https://code.s3.yandex.net/react/code/meat-01.png" alt="картинка"/>
+          <img src={image} alt="картинка"/>
         </div>
       </div>
       <div className={styles.compound}>
-        Биокотлета из марсианской Магнолии
+        <p className="text text_type_main-medium">
+          {name}
+        </p>
       </div>
       <div className={styles.container}>
         <div className={styles.calories}> 
@@ -30,7 +30,9 @@ const IngredientDetails = ({setIsModalIngredientOpen}) => {
             Калории, ккал
           </div>
           <div className={styles.number}> 
-            244,4
+            <p className="text text_type_digits-default">
+              {calories}
+            </p>
           </div>
         </div>
         <div className={styles.calories}>
@@ -38,15 +40,19 @@ const IngredientDetails = ({setIsModalIngredientOpen}) => {
             Белки, г
           </div>
           <div className={styles.number}> 
-            12, 2
+            <p className="text text_type_digits-default">
+              {proteins}
+            </p>
           </div>
         </div>
         <div className={styles.calories}>
           <div className={styles.ccal}> 
             Жиры, г
           </div>
-          <div className={styles.number}> 
-            17, 2
+          <div className={styles.number}>
+            <p className="text text_type_digits-default">
+              {fat}
+            </p>
           </div>
         </div>
         <div className={styles.calories}>
@@ -54,7 +60,9 @@ const IngredientDetails = ({setIsModalIngredientOpen}) => {
             Углеводы, г
           </div>
           <div className={styles.number}> 
-            10, 2
+            <p className="text text_type_digits-default">
+              {carbohydrates}
+            </p>
           </div>
         </div>
       </div>

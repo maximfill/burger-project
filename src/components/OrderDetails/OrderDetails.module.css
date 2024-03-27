@@ -7,20 +7,6 @@
   border-radius: 30px; 
 }
 
-.orderClosing {
-  margin-top: 40px;
-  width: 640px;
-  height: 64px;
-
-}
-
-.closing {
-  width: 24px;
-  height: 24px;
-  margin-left: auto;
-  cursor: pointer;
-}
-
 .numbers {
   margin-top: 16px;
   text-align: center;

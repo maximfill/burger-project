@@ -1,23 +1,15 @@
 import React from 'react'
 import styles from './OrderDetails.module.css';
 import myImage from '../../images/done.png';
-import image from '../../images/icon.png';
 
 
 
-const OrderDetails = ({setIsOrderDetails}) => {
 
-  const closingOrderDetails = () => {
-    setIsOrderDetails(false)
-  };
+const OrderDetails = () => {
 
   return (
     <div className={styles.order}>
-      <div className={styles.orderClosing}>
-        <div className={styles.closing} onClick={closingOrderDetails}>
-          <img src={image} alt="Image" />
-        </div>
-      </div>
+    
       <div className={styles.numbers}>
         <p className="text text_type_digits-large">034536</p>
       </div>

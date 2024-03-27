@@ -16,21 +16,15 @@ function App() {
   const [isLoading, setIsLoading] = React.useState(true);
   const [isModalIngredientOpen, setIsModalIngredientOpen] = React.useState(false);
   const [isModalOrderDetails, setIsOrderDetails] = React.useState(false);
+  const [ingredientDetails, setIngredientDetails] = React.useState(null);
 
   React.useEffect(() => {
-  //   fetch(src)
-  //   .then(res => res.json())
-  //   .then(data => {
-  //     setData(data.data);
-  //     setIsLoading(false);// в этот момент понимает что данные загрузились
-  //     console.log(data);
-  //   }) ;
-    getIngredientData() // вызов функции
+    getIngredientData()
   }, []);
 
-  const getIngredientData = async () => { // для асинхронной функ обяз пишем async(асинхронно)
+  const getIngredientData = async () => {
     try {
-      const res = await fetch(src); // в самом try за место then пишем await(подожди)
+      const res = await fetch(src);
       const data = await res.json();
       setData(data.data);
       setIsLoading(false);
@@ -41,26 +35,24 @@ function App() {
     }
   }
   
-
-//и компонент отрисовывается по новой, на 30 стр тернарный оператор что значение изм с isLoading  ?  true : false и рендерит <> что в фрагменте </>
   return (
     <div className={styles.mainContainer}> 
       <Header />
       <div className={styles.burgerContainer}> 
         {isLoading  ? <div>Loading...</div> :
         <>
-          <BurgerIngredients data={data}  setIsModalIngredientOpen={setIsModalIngredientOpen}/>
+          <BurgerIngredients data={data}  setIsModalIngredientOpen={setIsModalIngredientOpen} setIngredientDetails={setIngredientDetails}/>
           <BurgerConstructor data={data} setIsOrderDetails={setIsOrderDetails}/>
         </>
         }
       </div>
-      {isModalIngredientOpen ? //тернарный оператор выбирает из начального состояния
-        <Modal>
-          <IngredientDetails setIsModalIngredientOpen={setIsModalIngredientOpen} />
+      {isModalIngredientOpen ?
+        <Modal setIsModalOpen={setIsModalIngredientOpen} >
+          <IngredientDetails ingredientDetails={ingredientDetails} />
         </Modal> : null 
       }
       {isModalOrderDetails ?
-        <Modal>
+        <Modal setIsModalOpen={setIsOrderDetails}>
           <OrderDetails setIsOrderDetails={setIsOrderDetails} />
         </Modal> : null
       }
