@@ -4,7 +4,6 @@ import styles from './IngredientDetails.module.css';
 const IngredientDetails = ({ingredientDetails}) => {
 
   const {calories, proteins, fat, carbohydrates, image, name} = ingredientDetails;
-console.log(ingredientDetails)
 
   return (
     <div className={styles.ingredient}>

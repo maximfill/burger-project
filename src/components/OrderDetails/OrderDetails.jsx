@@ -2,11 +2,7 @@ import React from 'react'
 import styles from './OrderDetails.module.css';
 import myImage from '../../images/done.png';
 
-
-
-
 const OrderDetails = () => {
-
   return (
     <div className={styles.order}>
     

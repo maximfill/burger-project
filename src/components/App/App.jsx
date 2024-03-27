@@ -6,7 +6,6 @@ import styles from './App.module.css';
 import Modal from '../Modal/Modal';
 import OrderDetails from '../OrderDetails/OrderDetails';
 import IngredientDetails from '../IngredientDetails/IngredientDetails';
-// import { useEffect } from 'react';
 
 const src = "https://norma.nomoreparties.space/api/ingredients";
 
@@ -28,7 +27,6 @@ function App() {
       const data = await res.json();
       setData(data.data);
       setIsLoading(false);
-      console.log(data);
     }
     catch(err) {
       console.log(err)

@@ -3,9 +3,6 @@ import ModalOverlay from '../ModalOverlay/ModalOverlay';
 import styles from './Modal.module.css';
 import image from '../../images/icon.png';
 
-
-
-
 const Modal = ({children, setIsModalOpen}) => {
 
   const closingOrderDetails = () => {
